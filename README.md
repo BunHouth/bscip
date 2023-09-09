@@ -51,7 +51,13 @@ Install [Web3](https://www.npmjs.com/package/web3) or  [Alternative of web3](htt
 yarn add web3
 ```
 
-To start the integration, we need to choose the network. There are many network in blockchain, But for this case we will use Etherum Goerli Testnet. Please check [chainlist](https://chainlist.org/?testnets=true&search=Goerli) for RPC url
+To start the integration, we need to choose the network. There are many network in blockchain, But for this case we will use Etherum Goerli Testnet. Please check [chainlist](https://chainlist.org/?testnets=true&search=Goerli) for RPC url.
+
+Additional RPC
+- [Alchemy](https://alchemy.com)
+- [Infura](https://infura.io)
+- [Quicknode](https://www.quicknode.com/)
+- [Ankr](https://www.ankr.com)
 
 __Modify the code inside `page.tsx`__
 
@@ -78,6 +84,7 @@ Run the code to make sure everything working fine.
 We have fully connect our web page into web3, next step start connect web3 into blockchain smart contract.
 To call smart contract function we need the [ABI](https://www.quicknode.com/guides/ethereum-development/smart-contracts/what-is-an-abi). 
 ABI can get from your smart contract build or using any abi from blockchain explorer for testing.
+
 In this case we will using standard ERC20 ABI for testing.
 
 Please add following code init `src/abi/erc20.json`
